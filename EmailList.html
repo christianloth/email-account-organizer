@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html style="width: 100%;height: 100%;">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>315FinalProject</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/typicons.min.css">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
+</head>
+
+<body style="width: 100%;height: 100%;">
+    <div>
+        <div class="row content" style="width: 100%;">
+            <div class="col" style="padding-top: 0px;padding-left: 0px;width: 100%;">
+                <div class="btn-group flex-grow-1 Toolbar" role="group" style="width: 100%;"><a class="btn btn-primary Toolbar btn" role="button" id="EmailListSnd" href="EmailSend.html"><i class="fa fa-envelope"></i>&nbsp;Compose</a>
+                    <div class="dropdown btn-group Toolbar btn" role="group"><button class="btn btn-primary dropdown-toggle Toolbar btn" data-toggle="dropdown" aria-expanded="false" type="button"><i class="fa fa-tags"></i>&nbsp;Tags</button>
+                        <div class="dropdown-menu" role="menu" id="EmailListTagsMenu"><a class="dropdown-item" role="presentation" href="#">First Item</a><a class="dropdown-item" role="presentation" href="#">Second Item</a><a class="dropdown-item" role="presentation" href="#">Third Item</a></div>
+                    </div>
+                    <div class="dropdown btn-group Toolbar btn" role="group" id="EmailListSortMenu"><button class="btn btn-primary dropdown-toggle Toolbar btn" data-toggle="dropdown" aria-expanded="false" type="button"><i class="fa fa-sort"></i>&nbsp;Sort</button>
+                        <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="EmailList.html">Newest First</a><a class="dropdown-item" role="presentation" href="EmailList.html">Oldest First</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row content">
+            <div class="col d-inline-flex d-sm-inline-flex d-md-inline-flex d-lg-inline-flex d-xl-inline-flex align-items-center mainsearch holder">
+                <form class="d-flex" style="width: 100%;"><button class="btn btn-primary mainsearch btn" id="MainSearchSubmit" type="submit"><i class="fa fa-search d-xl-flex align-items-xl-center mainsearch" style="margin-right: 5px;margin-left: 5px;"></i></button><input class="form-control flex-grow-1 align-items-xl-center mainsearch widesearchbar"
+                        type="search" id="MainSearchBar" placeholder=" Search Mail" required="" autocomplete="on"></form>
+            </div>
+        </div>
+        <div class="row content Email_Pit">
+            <div class="col Inner_Pit">
+                <form method="get" enctype="application/x-www-form-urlencoded">
+                    <ul class="d-block" id="EmailPitList">
+                        <li class="Email_line">
+                            <a id="EmailLink" class="Email Section" href="EmailView.html">
+                                <div class="d-flex flex-row justify-content-between align-items-center Email Section" id="EmailContainer">
+                                    <p id="EmailTags" class="Email Tags">Tags</p>
+                                    <p id="EmailSender" class="Email Sender">Sender</p><strong id="EmailSubject" class="Email Subject">Subject</strong>
+                                    <p class="d-none Email Time" id="EmailTime">Timestamp</p><i class="fa fa-warning Email Warning" id="EmailWarning"></i></div>
+                            </a>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html style="min-width: 100%;height: 100%;">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>315FinalProject</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/typicons.min.css">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
+</head>
+
+<body style="min-width: 100%;min-height: 100%;background-color: rgb(255,255,255);">
+    <form method="post">
+        <div>
+            <div><a class="btn btn-primary EmailContent OPTIONS" role="button" id="ReturnToInbox" href="EmailList.html"><i class="fa fa-chevron-left"></i> Return to Emails</a>
+                <div class="btn-group"><button class="btn btn-primary EmailContent OPTIONS" type="submit"><i class="fa fa-send"></i>&nbsp;Send</button><button class="btn btn-primary dropdown-toggle dropdown-toggle-split EmailContent OPTIONS" data-toggle="dropdown" aria-expanded="false"
+                        type="button"></button>
+                    <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#">First Item</a><a class="dropdown-item" role="presentation" href="#">Second Item</a><a class="dropdown-item" role="presentation" href="#">Third Item</a></div>
+                </div>
+                <div class="btn-group"><button class="btn btn-primary EmailContent OPTIONS" type="button"><i class="typcn typcn-thumbs-ok"></i>&nbsp;Jokes</button><button class="btn btn-primary dropdown-toggle dropdown-toggle-split EmailContent OPTIONS" data-toggle="dropdown"
+                        aria-expanded="false" type="button"></button>
+                    <div class="dropdown-menu" role="menu"><button class="btn btn-primary dropdownbtn" id="JkPopular" type="button" onclick="reccomendJoke('Popular')">Popular</button><button class="btn btn-primary dropdownbtn" id="JkWork" type="button" onclick="reccomendJoke('Work')">Work</button><button class="btn btn-primary dropdownbtn" id="JkFamily" type="button" onclick="reccomendJoke('Family')">Family</button><button class="btn btn-primary dropdownbtn" id="JkKidFriendly" type="button" onclick="reccomendJoke('KidFriendly')">Kid Friendly</button><button class="btn btn-primary dropdownbtn" id="JkSchool" type="button" onclick="reccomendJoke('School')">School</button><button class="btn btn-primary dropdownbtn" id="JkMath" type="button" onclick="reccomendJoke('Math')">Math</button><button class="btn btn-primary dropdownbtn" id="JkSport" type="button" onclick="reccomendJoke('Sport')">Sport</button><button class="btn btn-primary dropdownbtn" id="JkChuckNorris" type="button" onclick="reccomendJoke('ChuckNorris')">Chuck Norris</button><button class="btn btn-primary dropdownbtn" id="JkPolice" type="button" onclick="reccomendJoke('Police')">Police</button><button class="btn btn-primary dropdownbtn" id="JkRetirement" type="button" onclick="reccomendJoke('Retirement')">Retirement</button><button class="btn btn-primary dropdownbtn" id="JkBar" type="button" onclick="reccomendJoke('Bar')">Bar</button><button class="btn btn-primary dropdownbtn" id="JkPolitical" type="button" onclick="reccomendJoke('Political')">Political</button><button class="btn btn-primary dropdownbtn" id="JkGender" type="button" onclick="reccomendJoke('')">Gender</button>
+                        <button
+                            class="btn btn-primary dropdownbtn" id="JkReligious" type="button">Religious</button><button class="btn btn-primary dropdownbtn" id="JkBlonde" type="button">Blonde</button><button class="btn btn-primary dropdownbtn" id="JkOneLiner" type="button">One Liner</button><button class="btn btn-primary dropdownbtn"
+                                id="JkYoMoma" type="button">Yo Mama</button></div>
+                </div><button class="btn btn-primary EmailContent OPTIONS" type="reset"><i class="fa fa-trash"></i>&nbsp;Delete</button></div>
+            <div>
+                <hr class="MessageLine"><input class="form-control form-control-sm EmailContent FROM" type="text" id="SndFrom" name="SndFrom" placeholder="From: " inputmode="email" required="" readonly="" autocomplete="off"><input class="form-control form-control-sm EmailContent TO"
+                    type="text" id="SndTO" name="SndTO" placeholder="To: " inputmode="email" required=""><input class="form-control form-control-sm EmailContent CC" type="text" id="SndCC" name="SndCC" placeholder="CC:" inputmode="email"><input class="form-control form-control-sm EmailContent BCC"
+                    type="text" id="SndBCC" name="SndBCC" placeholder="BCC:" inputmode="email"><input class="form-control form-control-sm EmailContent SUBJECT" type="text" id="SndSubject" name="SndSubject" placeholder="Subject:" required=""><textarea class="form-control"
+                    id="SndMessage" name="SndMessage" wrap="soft" spellcheck="true" rows="100%" cols="100%" autocomplete="on"></textarea></div>
+        </div>
+    </form>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.min.js"></script>
+</body>
+
+</html>

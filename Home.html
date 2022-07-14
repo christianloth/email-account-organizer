@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html id="HTML">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>315FinalProject</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/typicons.min.css">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
+	<link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body id="Body">
+    <div class="container" id="page-container" style="padding-right: 0px;padding-left: 0px;">
+        <div class="row" style="margin-right: -20px;">
+            <div class="col-lg-2 text-center d-none align-self-center"><a class="btn btn-primary Bigbutton" role="button" id="Settings" href="Settings.html">Settings</a></div>
+            <div class="col-lg-2 text-center align-self-center"><button class="btn btn-primary Bigbutton" id="Signout" type="button" style="background-color: rgba(0,123,255,0);color: rgb(255,255,255);" onclick="signout()">Signout</button></div>
+            <div class="col-lg-2 offset-lg-6 text-center" id="LogoContainer" style="padding-right: 20px;"><a href="http://52.12.189.175:8000/index.html" target="_blank"><img id="Logo" src="assets/img/MainSiteLogo2.png" style="min-width: 50px;max-width: 150px;filter: brightness(120%);"></a></div>
+        </div>
+        <div class="row" style="margin-right: -20px;margin-top: 0px;">
+            <div class="col-lg-2" id="Sidebar" style="background-color: #000000;padding: 10px;height: Auto;">
+                <h4 class="text-uppercase text-center text-dark border rounded" style="background-color: #ffffff;color: rgb(71,79,81);margin: 4px;">Options</h4>
+                <div class="d-flex d-lg-flex flex-column flex-grow-0 flex-shrink-1 justify-content-lg-center Sidebar Accounts"><a class="btn btn-primary text-left border rounded" data-toggle="collapse" aria-expanded="true" aria-controls="EmailAccounts" href="#EmailAccounts" role="button" style="background-color: rgb(255,255,255);color: rgb(0,0,0);">Email Accounts</a>
+                    <div
+                        class="collapse show flex-column flex-grow-0 flex-shrink-1" id="EmailAccounts">
+                        <div class="form-check form-check-inline border rounded border-light d-inline-flex AccountMenu Checks" style="color: rgb(255,255,255);"><input class="form-check-input" type="checkbox" id="email1" name="email1" checked=""><label class="form-check-label text-break text-left EmailAccounts" for="email1">example1@gmail.com</label></div>
+                        <div class="form-check form-check-inline border rounded border-light d-inline-flex AccountMenu Checks"
+                            style="color: rgb(255,255,255);"><input class="form-check-input" type="checkbox" id="formCheck-2" checked=""><label class="form-check-label text-break text-left EmailAccounts" for="formCheck-2">example2@gmail.com</label></div><a class="btn btn-primary AccountMenu Control"
+                            role="button" id="ManageEmails" href="Settings.html">Manage Emails</a></div>
+            </div>
+            <div class="d-flex d-lg-flex flex-column flex-grow-1 flex-shrink-1 justify-content-lg-center Sidebar Accounts"><a class="btn btn-primary text-left border rounded" data-toggle="collapse" aria-expanded="true" aria-controls="EmailTags" href="#EmailTags" role="button" style="background-color: rgb(255,255,255);color: rgb(0,0,0);">Email Tags</a>
+                <div class="collapse show"
+                    id="EmailTags">
+                    <div class="form-check form-check-inline border rounded border-light d-inline-flex AccountMenu Checks" style="color: rgb(255,255,255);"><input class="form-check-input" type="checkbox" id="formCheck-3" checked=""><label class="form-check-label text-break text-left EmailAccounts" for="formCheck-3">example1@gmail.com</label></div>
+                    <div class="form-check form-check-inline border rounded border-light d-inline-flex AccountMenu Checks"
+                        style="color: rgb(255,255,255);"><input class="form-check-input" type="checkbox" id="formCheck-4" checked=""><label class="form-check-label text-break text-left EmailAccounts" for="formCheck-4">example2@gmail.com</label></div><a class="btn btn-primary AccountMenu Control"
+                        role="button" id="ManageTags" href="Settings.html">Manage Tags</a></div>
+            </div>
+        </div>
+        <div class="col d-block Main" style="padding-top: 0px;padding-left: 0px;height: 800px;">
+            <div class="row d-none content">
+                <div class="col" style="padding-top: 0px;padding-left: 0px;">
+                    <div class="btn-toolbar Toolbar">
+                        <div class="btn-group flex-grow-1" role="group"><button class="btn btn-primary Toolbar btn" type="button">Select All&nbsp;<i class="fa fa-square-o"></i></button><button class="btn btn-primary Toolbar btn" type="button">Tags&nbsp;<i class="fa fa-tags"></i></button><button class="btn btn-primary Toolbar btn"
+                                type="button">Sort&nbsp;<i class="fa fa-sort"></i></button><button class="btn btn-primary Toolbar btn" type="button">Delete&nbsp;<i class="fa fa-trash-o"></i></button></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row d-none content">
+                <div class="col d-inline-flex d-sm-inline-flex d-md-inline-flex d-lg-inline-flex d-xl-inline-flex align-items-center mainsearch holder"><i class="fa fa-search mainsearch icon" style="margin-right: 5px;margin-left: 5px;"></i><input class="flex-grow-1 mainsearch widesearchbar" type="search" id="MainSearchBar" placeholder="Search Mail" required="" minlength="1"></div>
+            </div>
+            <div class="row d-none content Email_Pit">
+                <div class="col Inner_Pit">
+                    <form method="get" enctype="application/x-www-form-urlencoded">
+                        <ul class="d-block" id="EmailPitList">
+                            <li class="Email_line">
+                                <div class="d-flex flex-row justify-content-between align-items-center EmailSection"><i class="fa fa-warning Email Warning"></i>
+                                    <div class="Email Tags"><a class="btn btn-primary Email Tags Hover" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-1" href="#collapse-1" role="button">Tags</a>
+                                        <div class="collapse Email Tags Display" id="collapse-1">
+                                            <p class="Email Tag">Collapse content.</p>
+                                        </div>
+                                    </div>
+                                    <p class="Email Sender">Sender</p><strong class="Email Subject">Subject</strong>
+                                    <p class="Email Time">Timestamp</p>
+                                </div>
+                            </li>
+                            <li class="Email_line">Email 2</li>
+                            <li class="Email_line">Email 3</li>
+                            <li class="Email_line">Email 4</li>
+                        </ul>
+                    </form>
+                </div>
+            </div><iframe id="contentFrame" src="EmailList.html" width="100%" height="100%" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe></div>
+    </div>
+    <div class="footer-2">
+        <div class="container footer">
+            <div class="row" style="margin-top: 0px;margin-right: 0px;margin-left: 0px;">
+                <div class="col-8 col-sm-6 col-md-6 footercol">
+                    <p class="text-center text-left" style="margin-top:5%;margin-bottom:3%;">© 2020 MailConnect @ Texas A&amp;M Universty, Team 35</p>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-6 offset-lg-0 footercol">
+                    <p class="text-right" style="margin-top:5%;margin-bottom:8%%;font-size:1em;">Privacy Policy</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.min.js"></script>
+	<script src="assets/js/home.js"></script>
+</body>
+
+</html>

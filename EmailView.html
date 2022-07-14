@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html style="width: 100%;height: 100%;">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>315FinalProject</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/typicons.min.css">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
+</head>
+
+<body style="width: 100%;height: 100%;background-color: rgb(255,255,255);">
+    <div style="width: 100%;height: 100%;">
+        <form id="EmailViewer" method="post">
+            <div><a class="btn btn-primary EmailContent OPTIONS" role="button" id="ReturnToInbox" href="EmailList.html"><i class="fa fa-chevron-left"></i> Return to Emails</a><button class="btn btn-primary EmailContent OPTIONS" id="ManageFlags" type="button"><i class="fa fa-tags"></i>&nbsp;Manage Tags</button><button class="btn btn-primary EmailContent OPTIONS" id="DeleteEmail" type="button"><i class="fa fa-trash"></i>&nbsp;Delete</button>
+                <button
+                    class="btn btn-primary EmailContent OPTIONS" id="Reply" type="submit"><i class="fa fa-mail-reply"></i>&nbsp;Reply</button><button class="btn btn-primary EmailContent OPTIONS" id="Forward" type="submit"><i class="fa fa-mail-forward"></i>&nbsp;Forward</button></div>
+            <div>
+                <p class="d-none EmailContent WARNING" id="WarningField">Warning, this email has been flagged as harmful.</p>
+            </div>
+            <div style="height: 100%;width: 100%;">
+                <hr class="MessageLine"><input class="form-control EmailContent FROM" type="text" id="FromField" name="FromField" placeholder="From: " readonly=""><input class="form-control EmailContent TO" type="text" id="ToField" name="ToField" placeholder="To: " readonly="">
+                <input
+                    class="form-control EmailContent SUBJECT" type="text" id="SubjectField" name="SubjectField" placeholder="Subject: " readonly="">
+                    <p id="TagField" class="EmailContent TAGS">Tags:&nbsp;</p><textarea class="form-control EmailContent MAIN" id="MainField" readonly="" name="MainField" rows="100%" cols="100%"></textarea></div>
+        </form>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.min.js"></script>
+</body>
+
+</html>
